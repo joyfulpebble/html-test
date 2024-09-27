@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Test case</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="mini-slider.css" />
+    <link rel="stylesheet" href="img-grid.css" />
+    <link rel="stylesheet" href="categories.css" />
+    <link rel="stylesheet" href="header.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="header flex-cen flex-row">
+        <div class="logo">
+          <img src="/assets/logo.png" alt="logo" />
+        </div>
+        <button id="catalog" class="btn_catalog flex-cen">
+          <object type="image/svg+xml" data="assets/menu.svg"></object>
+          Каталог
+        </button>
+        <button class="btn_rooms flex-cen">
+          <object type="image/svg+xml" data="assets/rooms.svg"></object>
+          Каталог
+        </button>
+        <div class="search_container flex-cen">
+          <object
+            class="search_icon flex-cen"
+            type="image/svg+xml"
+            width="24"
+            data="assets/search.svg"
+          ></object>
+          <input
+            id="search_input"
+            class="search_input"
+            type="text"
+            placeholder="Найдем"
+          />
+        </div>
+        <div class="contacs flex-col-cen">
+          <div class="phone_number">
+            <object type="image/svg+xml" data="assets/phon.svg"></object>
+            +7 (978) 820 - 53 - 10
+          </div>
+          <span class="contacs_title">Звоните с 9:00 до 22:00 ежедневно</span>
+        </div>
+        <div class="user_angle flex-cen flex-row">
+          <div class="user_likes flex-cen flex-col-cen">
+            <div class="likes_container">
+              <object
+                width="36"
+                type="image/svg+xml"
+                data="assets/heart.svg"
+              ></object>
+              <div class="message flex-cen">0</div>
+            </div>
+            Избранное
+          </div>
+          <div class="user_cart flex-col-cen">
+            <div class="cart_container flex-row">
+              <object
+                width="36"
+                type="image/svg+xml"
+                data="assets/cart_header.svg"
+              ></object>
+              <div class="message flex-cen">0</div>
+            </div>
+            Корзина
+          </div>
+          <div class="user_profile flex-cen flex-col-cen">
+            <object
+              width="36"
+              type="image/svg+xml"
+              data="assets/person.svg"
+            ></object>
+            Войти
+          </div>
+        </div>
+      </section>
+      <section class="categories flex-cen flex-row">
+        <div class="promo flex-cen flex-row">
+          <object type="image/svg+xml" data="assets/fire.svg"></object>
+          <span class="promo_title"> Акции</span>
+        </div>
+        <div class="category">Для сада</div>
+        <div class="category">Кресла и стулья</div>
+        <div class="category">Для офиса</div>
+        <div class="category">Компьютерные столы</div>
+        <div class="category">Для кафе и дома</div>
+        <div class="category">Для школы</div>
+        <div class="category">Вешалки</div>
+        <div class="category">Металлическая мебель</div>
+        <div class="category">Кресла-мешки</div>
+      </section>
+      <section id="full_catalog" class="full_catalog hide">
+        <div class="catalog_names flex-col-cen">
+          <div class="catalog_item flex-cen flex-row selected">
+            Мебель для сада
+          </div>
+          <div class="catalog_item flex-cen flex-row">Кресла и стулья</div>
+          <div class="catalog_item flex-cen flex-row">Мебель для офиса</div>
+          <div class="catalog_item flex-cen flex-row">Компьютерные столы</div>
+          <div class="catalog_item flex-cen flex-row">Для кафе и дома</div>
+          <div class="catalog_item flex-cen flex-row">Школьная мебель</div>
+          <div class="catalog_item flex-cen flex-row">Вешалки и акссесуары</div>
+          <div class="catalog_item flex-cen flex-row">Металлическая мебель</div>
+          <div class="catalog_item flex-cen flex-row">Кресла-мешки</div>
+        </div>
+        <div class="catalog_data"></div>
+      </section>
+    </header>
+    <section class="container_root">
+      <section class="slider">
+        <div class="slider_arrows">
+          <div class="slider_arrow flex-cen fix_left_arrow">&larr;</div>
+          <div class="slider_arrow flex-cen fix_right_arrow">&rarr;</div>
+        </div>
+
+        <div class="slider_img">
+          <img src="/assets/sider-1.png" alt="asd" />
+        </div>
+        <div class="slider_position">
+          <div class="slider_position_one">&nbsp;</div>
+          <div class="slider_position_two">&nbsp;</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card_header">
+          <div class="card_header_overlay">
+            <div class="card_header_like">
+              <object type="image/svg+xml" data="assets/like.svg"></object>
+            </div>
+
+            <div class="card_header_overlay_offers">
+              <div class="card_header_sale flex-cen">Супер распродажа</div>
+              <div class="card_header_hot flex-cen">Хит продаж</div>
+            </div>
+          </div>
+
+          <div class="card_header_img">
+            <img src="/assets/card_img_1.jpg" alt="asd" />
+          </div>
+
+          <div class="card_header_pin"></div>
+          <div class="card_header_pin"></div>
+        </div>
+        <div class="card_body">
+          <div class="card_body_select-color">
+            <div class="selected_color flex-cen white_border">
+              <div class="color_pick_item yellow"></div>
+            </div>
+
+            <div class="flex-cen white_border">
+              <div class="color_pick_item orange"></div>
+            </div>
+
+            <div class="flex-cen white_border">
+              <div class="color_pick_item brown"></div>
+            </div>
+
+            <div class="flex-cen white_border">
+              <div class="color_pick_item dark_gray"></div>
+            </div>
+          </div>
+          <div class="flex-col-left">
+            <div class="flex-row flex-between">
+              <span class="item_price">178 855 ₽</span>
+              <span class="item_old_price">357 710 ₽</span>
+              <div class="item_price_sale flex-cen">-50%</div>
+            </div>
+
+            <div class="item_in_stock">&bull; В наличии</div>
+          </div>
+          <div class="card_body_item-name">
+            Кабинет City или более длинное название позиции
+          </div>
+          <div class="card_body_item-buy flex-row flex-between">
+            <button class="btn_more">Подробнее</button>
+            <object type="image/svg+xml" data="assets/cart.svg"></object>
+          </div>
+        </div>
+      </section>
+
+      <section class="mini-slider flex-row">
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_1.png" alt="" />
+          <span class="mini-slider_item_title">
+            Садовая <br />
+            мебель
+          </span>
+        </div>
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_2.png" alt="" />
+          <span class="mini-slider_item_title">
+            Кресла <br />
+            и стулья
+          </span>
+        </div>
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_3.png" alt="" />
+          <span class="mini-slider_item_title">
+            Офисная <br />
+            мебель
+          </span>
+        </div>
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_4.png" alt="" />
+          <span class="mini-slider_item_title">
+            Компьютерные <br />
+            столы
+          </span>
+        </div>
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_5.png" alt="" />
+          <span class="mini-slider_item_title">
+            Мебель <br />
+            для кафе и дома
+          </span>
+        </div>
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_6.png" alt="" />
+          <span class="mini-slider_item_title">
+            Школьная <br />
+            мебель
+          </span>
+        </div>
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_7.png" alt="" />
+          <span class="mini-slider_item_title">
+            Вешалки и <br />
+            аксессуары
+          </span>
+        </div>
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_8.png" alt="" />
+          <span class="mini-slider_item_title">
+            Металлическая <br />
+            мебель
+          </span>
+        </div>
+        <div class="mini-slider_item flex-col-cen flex-cen">
+          <img class="mini-slider_item_img" src="assets/item_9.png" alt="" />
+          <span class="mini-slider_item_title"> Кресла-мешки </span>
+        </div>
+      </section>
+
+      <section class="grid_photos">
+        <div class="grid_item_1">
+          <img class="grid_item_1_img" src="assets/grid_item_1.jpg" alt="" />
+        </div>
+        <div class="grid_item_2">
+          <img class="grid_item_2_img" src="assets/grid_item_2.jpg" alt="" />
+        </div>
+        <div class="grid_item_3">
+          <div class="z-index_2">
+            <span class="grid_item_3_title">Экспресс-дизайн</span>
+            <p class="grid_item_3_paragraph">
+              Быстрый подбор мебели <br />
+              для вашего интерьера
+            </p>
+            <button class="btn_more btn_dark_border">Подробнее</button>
+          </div>
+          <img class="grid_item_3_img" src="assets/grid_item_3.png" alt="" />
+        </div>
+        <div class="grid_item_4">
+          <img class="grid_item_4_img" src="assets/grid_item_4.png" alt="" />
+        </div>
+        <div class="grid_item_5">
+          <img class="grid_item_5_img" src="assets/grid_item_5.jpg" alt="" />
+        </div>
+        <div class="grid_item_6">
+          <img class="grid_item_6_img" src="assets/grid_item_6.png" alt="" />
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

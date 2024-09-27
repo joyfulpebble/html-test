@@ -1,0 +1,89 @@
+.categories {
+  width: 1559px;
+  height: 58px;
+
+  background-color: rgba(232, 232, 232, 1);
+  padding: 0 180px;
+
+  justify-content: start;
+}
+
+.promo {
+  width: 130px;
+  height: 36px;
+
+  border: 1px solid rgba(218, 9, 22, 1);
+  border-radius: 20px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.promo_title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.62px;
+  text-align: center;
+
+  color: rgba(218, 9, 22, 1);
+}
+
+.category {
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.39px;
+  text-align: left;
+}
+
+/* --------------------------------------------------- */
+
+.full_catalog {
+  width: 100%;
+  height: 100%;
+
+  background-color: white;
+
+  position: absolute;
+  z-index: 10;
+  padding-left: 180px;
+}
+
+.catalog_names {
+  width: 330px;
+  height: 800px;
+
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  border-right: 1px solid rgba(232, 232, 232, 1);
+  row-gap: 20px;
+  justify-content: flex-start;
+}
+
+.catalog_item {
+  width: 330px;
+  height: 54px;
+
+  cursor: pointer;
+
+  /* селектед */
+  /* background: rgba(245, 243, 241, 1); */
+  justify-content: start;
+
+  font-size: 18px;
+  /* 700 selected */
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+
+  transition: background 0.3s;
+}
+
+.catalog_item:hover {
+  background: rgba(245, 243, 241, 1);
+}
+
+.selected {
+  background: rgba(245, 243, 241, 1);
+  font-weight: 700;
+}
