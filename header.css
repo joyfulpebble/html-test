@@ -1,5 +1,5 @@
 .header {
-  width: 1559px;
+  width: 1920px;
   padding: 25px 180px;
 
   justify-content: start;
@@ -15,7 +15,7 @@
 
 .btn_catalog {
   background-color: rgba(218, 9, 22, 1);
-  padding: 14px 20px;
+  padding: 15px 20px;
 
   cursor: pointer;
 
@@ -26,8 +26,13 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 22.07px;
-  text-align: left;
+  text-align: center;
   color: white;
+}
+
+.btn_title {
+  margin-left: 5px;
+  margin-top: 3px;
 }
 
 .btn_rooms {
@@ -105,6 +110,10 @@
   text-align: center;
 }
 
+.user_angle {
+  position: relative;
+}
+
 .user_likes {
   cursor: pointer;
   margin-right: 30px;
@@ -119,9 +128,9 @@
   cursor: pointer;
 }
 
-.message {
+.message_like {
   width: 19px;
-  height: 19px;
+  height: 15px;
 
   font-size: 12px;
   font-weight: 700;
@@ -131,11 +140,31 @@
   background-color: rgba(218, 9, 22, 1);
   border-radius: 5px;
   color: white;
+
+  position: absolute;
+  left: 65px;
+}
+
+.message_cart {
+  width: 19px;
+  height: 15px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.71px;
+  text-align: center;
+
+  background-color: rgba(218, 9, 22, 1);
+  border-radius: 5px;
+  color: white;
+
+  position: absolute;
+  left: 175px;
 }
 
 .cart_container {
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .likes_container {

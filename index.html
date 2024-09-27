@@ -14,21 +14,22 @@
     <link rel="stylesheet" href="img-grid.css" />
     <link rel="stylesheet" href="categories.css" />
     <link rel="stylesheet" href="header.css" />
+
     <script type="module" src="index.js"></script>
   </head>
   <body>
-    <header>
+    <section>
       <section class="header flex-cen flex-row">
         <div class="logo">
           <img src="/assets/logo.png" alt="logo" />
         </div>
         <button id="catalog" class="btn_catalog flex-cen">
           <object type="image/svg+xml" data="assets/menu.svg"></object>
-          Каталог
+          <span class="btn_title">Каталог</span>
         </button>
         <button class="btn_rooms flex-cen">
           <object type="image/svg+xml" data="assets/rooms.svg"></object>
-          Каталог
+          <span class="btn_title">Каталог</span>
         </button>
         <div class="search_container flex-cen">
           <object
@@ -45,11 +46,11 @@
           />
         </div>
         <div class="contacs flex-col-cen">
-          <div class="phone_number">
+          <div class="phone_number flex-cen">
             <object type="image/svg+xml" data="assets/phon.svg"></object>
-            +7 (978) 820 - 53 - 10
+            <span class="phone_number_title">+7 (978) 820 - 53 - 10</span>
           </div>
-          <span class="contacs_title">Звоните с 9:00 до 22:00 ежедневно</span>
+          <span>Звоните с 9:00 до 22:00 ежедневно</span>
         </div>
         <div class="user_angle flex-cen flex-row">
           <div class="user_likes flex-cen flex-col-cen">
@@ -59,7 +60,7 @@
                 type="image/svg+xml"
                 data="assets/heart.svg"
               ></object>
-              <div class="message flex-cen">0</div>
+              <div class="message_like flex-cen">0</div>
             </div>
             Избранное
           </div>
@@ -70,7 +71,7 @@
                 type="image/svg+xml"
                 data="assets/cart_header.svg"
               ></object>
-              <div class="message flex-cen">0</div>
+              <div class="message_cart flex-cen">0</div>
             </div>
             Корзина
           </div>
@@ -115,12 +116,16 @@
         </div>
         <div class="catalog_data"></div>
       </section>
-    </header>
+    </section>
     <section class="container_root">
       <section class="slider">
         <div class="slider_arrows">
-          <div class="slider_arrow flex-cen fix_left_arrow">&larr;</div>
-          <div class="slider_arrow flex-cen fix_right_arrow">&rarr;</div>
+          <div class="slider_arrow flex-cen fix_left_arrow">
+            <object type="image/svg+xml" data="assets/arrow.svg"></object>
+          </div>
+          <div class="slider_arrow flex-cen fix_right_arrow">
+            <object type="image/svg+xml" data="assets/arrow_r.svg"></object>
+          </div>
         </div>
 
         <div class="slider_img">
