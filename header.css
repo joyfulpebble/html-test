@@ -1,5 +1,5 @@
 .header {
-  width: 1560px;
+  width: 1700px;
   padding: 25px 180px;
 
   justify-content: start;
@@ -63,6 +63,7 @@
 }
 
 .search_icon {
+  display: flex;
   cursor: pointer;
 
   height: 52px;

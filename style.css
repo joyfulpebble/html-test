@@ -12,8 +12,8 @@
   --btn-more-hov: rgba(37, 37, 54, 1);
 }
 
-.hide {
-  display: none;
+h2 {
+  margin: 0;
 }
 
 img {
@@ -37,6 +37,36 @@ body {
 }
 
 /* ------ */
+
+.text-700 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+.text-400 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.17px;
+  text-align: left;
+}
+
+.hide {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 10;
+}
+
+.margin-t-20 {
+  margin-top: 20px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
 
 .z-index_2 {
   position: absolute;

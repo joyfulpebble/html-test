@@ -1,18 +1,50 @@
 const $catalogbtn = document.getElementById("catalog");
+const $roomsbtn = document.getElementById("btn_rooms");
+
 const $catalog = document.getElementById("full_catalog");
+const $rooms = document.getElementById("rooms");
+
+const $header = document.getElementById("header");
+const $categories = document.getElementById("categories");
 
 const $catalogitems = document.getElementsByClassName("catalog_item");
 
 $catalogbtn.addEventListener("click", () => {
-  let a = $catalog.classList.contains("hide");
+  const have_class = $catalog.classList.contains("hide");
 
-  if (a) {
+  if (have_class) {
     $catalog.classList.remove("hide");
-  } else {
-    $catalog.classList.add("hide");
-  }
+    $catalog.classList.add("flex-row");
 
-  console.log(a);
+    $catalog.classList.add("fixed");
+    $header.classList.add("fixed");
+    $categories.classList.add("fixed");
+  } else {
+    $catalog.classList.add("hide", "fixed");
+    $catalog.classList.remove("flex-row");
+
+    $catalog.classList.remove("fixed");
+    $header.classList.remove("fixed");
+    $categories.classList.remove("fixed");
+  }
 });
 
-// const have_select =
+$roomsbtn.addEventListener("click", () => {
+  const have_class = $rooms.classList.contains("hide");
+
+  if (have_class) {
+    $rooms.classList.remove("hide");
+    $rooms.classList.add("flex-row");
+
+    $rooms.classList.add("fixed");
+    $header.classList.add("fixed");
+    $categories.classList.add("fixed");
+  } else {
+    $rooms.classList.add("hide", "fixed");
+    $rooms.classList.remove("flex-row");
+
+    $rooms.classList.remove("fixed");
+    $header.classList.remove("fixed");
+    $categories.classList.remove("fixed");
+  }
+});

@@ -55,9 +55,32 @@
   height: 46px;
 }
 
+.point {
+  width: 13px;
+  height: 13px;
+  background-color: red;
+
+  border-radius: 50%;
+  border: 3px solid white;
+
+  position: absolute;
+  z-index: 2;
+}
+
+.point_1 {
+  top: 161px;
+  left: 200px;
+}
+
+.point_1 {
+  top: 161px;
+  left: 200px;
+}
+
 .grid_item_1 {
   border-radius: 50px;
   overflow: hidden;
+  position: relative;
 
   grid-column: span 2 / span 2;
 }

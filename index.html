@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="img-grid.css" />
     <link rel="stylesheet" href="categories.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="rooms.css" />
 
     <script type="module" src="index.js"></script>
   </head>
   <body>
     <section>
-      <section class="header flex-cen flex-row">
+      <section id="header" class="header flex-cen flex-row">
         <div class="logo">
           <img src="/assets/logo.png" alt="logo" />
         </div>
@@ -27,7 +28,7 @@
           <object type="image/svg+xml" data="assets/menu.svg"></object>
           <span class="btn_title">Каталог</span>
         </button>
-        <button class="btn_rooms flex-cen">
+        <button id="btn_rooms" class="btn_rooms flex-cen">
           <object type="image/svg+xml" data="assets/rooms.svg"></object>
           <span class="btn_title">Каталог</span>
         </button>
@@ -85,7 +86,7 @@
           </div>
         </div>
       </section>
-      <section class="categories flex-cen flex-row">
+      <section id="categories" class="categories flex-cen flex-row">
         <div class="promo flex-cen flex-row">
           <object type="image/svg+xml" data="assets/fire.svg"></object>
           <span class="promo_title"> Акции</span>
@@ -103,18 +104,340 @@
       <section id="full_catalog" class="full_catalog hide">
         <div class="catalog_names flex-col-cen">
           <div class="catalog_item flex-cen flex-row selected">
-            Мебель для сада
+            <div class="flex-cen">
+              <object type="image/svg+xml" data="assets/garden.svg"></object>
+              <span class="catalog_item_title">Мебель для сада</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
           </div>
-          <div class="catalog_item flex-cen flex-row">Кресла и стулья</div>
-          <div class="catalog_item flex-cen flex-row">Мебель для офиса</div>
-          <div class="catalog_item flex-cen flex-row">Компьютерные столы</div>
-          <div class="catalog_item flex-cen flex-row">Для кафе и дома</div>
-          <div class="catalog_item flex-cen flex-row">Школьная мебель</div>
-          <div class="catalog_item flex-cen flex-row">Вешалки и акссесуары</div>
-          <div class="catalog_item flex-cen flex-row">Металлическая мебель</div>
-          <div class="catalog_item flex-cen flex-row">Кресла-мешки</div>
+          <div class="catalog_item flex-cen flex-row">
+            <div class="flex-cen thin_item_icon">
+              <object type="image/svg+xml" data="assets/chear.svg"></object>
+              <span class="thin_item">Кресла и стулья</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="catalog_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                type="image/svg+xml"
+                data="assets/office_table.svg"
+              ></object>
+              <span class="catalog_item_title">Мебель для офиса</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="catalog_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                type="image/svg+xml"
+                data="assets/computer_table.svg"
+              ></object>
+              <span class="catalog_item_title">Компьютерные столы</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="catalog_item flex-cen flex-row">
+            <div class="flex-cen thin_item_icon">
+              <object
+                type="image/svg+xml"
+                data="assets/cafe_chearsvg.svg"
+              ></object>
+              <span class="thin_item">Для кафе и дома</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="catalog_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/school_table.svg"
+              ></object>
+              <span class="catalog_item_title">Школьная мебель</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="catalog_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/hanger.svg"
+              ></object>
+              <span class="catalog_item_title">Вешалки и акссесуары</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="catalog_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/metal_box.svg"
+              ></object>
+              <span class="catalog_item_title">Металлическая мебель</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="catalog_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/soft_chear.svg"
+              ></object>
+              <span class="catalog_item_title">Кресла-мешки</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="catalog_item flex-cen flex-row margin-t-20">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/fire.svg"
+              ></object>
+              <span class="catalog_item_title sale_item"
+                >Акции и распродажи</span
+              >
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
         </div>
-        <div class="catalog_data"></div>
+        <div class="catalog_data flex-row">
+          <div class="catalog_data_items">
+            <h2>Мебель для сада</h2>
+            <div class="catalog_data_items_names flex-col-left">
+              <span class="catalog_data_items_title">Шезлонги</span>
+              <span class="catalog_data_items_title">Зонты</span>
+              <span class="catalog_data_items_title">Пластиковые столы</span>
+              <span class="catalog_data_items_title">Комплекты садовые</span>
+              <span class="catalog_data_items_title">Качели садовые</span>
+              <span class="catalog_data_items_title">Подвесные кресла</span>
+            </div>
+          </div>
+          <div class="catalog_data_items_info flex-col-left">
+            <span class="catalog_data_items_info_title"
+              >Исскуственный ротанг</span
+            >
+            <div class="flex-col-left gap-15">
+              <span class="catalog_data_info_title"
+                >Комплекты модульной мебели</span
+              >
+              <span class="catalog_data_info_title">Кресла, стулья</span>
+              <span class="catalog_data_info_title">Столы</span>
+              <span class="catalog_data_info_title">Скамьи и лавки</span>
+              <span class="catalog_data_info_title">Шезлонги</span>
+              <span class="catalog_data_info_title"
+                >Наборы мебели (стол +2 кресла)</span
+              >
+              <span class="catalog_data_info_title"
+                >Наборы мебели (стол +4 кресла)</span
+              >
+              <span class="catalog_data_info_title"
+                >Наборы мебели с диванами</span
+              >
+              <span class="catalog_data_info_title">Диваны</span>
+            </div>
+          </div>
+          <div class="advertising_section flex-col-left">
+            <div class="advertising">
+              <div class="advertising_slogan flex-col-left">
+                <object type="image/svg+xml" data="assets/slogan.svg"></object>
+                <span class="slogan_title">Качество, стиль и удобство.</span>
+                <span class="slogan_title_red"
+                  >Выбор, который вдохновляет!</span
+                >
+              </div>
+              <div class="advertising_img">
+                <img src="assets/advertising_img.png" alt="" />
+              </div>
+              <div class="triangle"></div>
+            </div>
+            <div class="fabric_advertising flex-row">
+              <object type="image/svg+xml" data="assets/pillowsvg.svg"></object>
+              <div class="fabric_advertising_titles flex-col-left">
+                <span class="text-700">Бесплатные образцы тканей</span>
+                <span class="text-400"
+                  >Выберите до 5 образцов из более чем 100 вариантов
+                  обивок</span
+                >
+              </div>
+            </div>
+            <div class="fabric_advertising flex-row">
+              <object type="image/svg+xml" data="assets/pillowsvg.svg"></object>
+              <div class="fabric_advertising_titles flex-col-left">
+                <span class="text-700">Бесплатные образцы тканей</span>
+                <span class="text-400"
+                  >Выберите до 5 образцов из более чем 100 вариантов
+                  обивок</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="rooms" class="rooms hide">
+        <div class="rooms_names flex-col-cen">
+          <div class="rooms_item flex-cen flex-row selected">
+            <div class="flex-cen">
+              <object
+                type="image/svg+xml"
+                data="assets/living_room.svg"
+              ></object>
+              <span class="rooms_item_title">Гостинная</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="rooms_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object type="image/svg+xml" data="assets/bed.svg"></object>
+              <span class="rooms_item_title">Спальня</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="rooms_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/pot.svg"
+              ></object>
+              <span class="rooms_item_title">Сад и дача</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="rooms_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object type="image/svg+xml" data="assets/closet.svg"></object>
+              <span class="rooms_item_title">Гардеробная</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="rooms_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object type="image/svg+xml" data="assets/kitchen.svg"></object>
+              <span class="rooms_item_title">Кухня</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="rooms_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                type="image/svg+xml"
+                data="assets/child_room.svg"
+              ></object>
+              <span class="rooms_item_title">Детская</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="rooms_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/office_chear.svg"
+              ></object>
+              <span class="rooms_item_title">Офис</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="rooms_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/nightstand.svg"
+              ></object>
+              <span class="rooms_item_title">Прихожая</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+          <div class="rooms_item flex-cen flex-row">
+            <div class="flex-cen">
+              <object
+                width="29"
+                type="image/svg+xml"
+                data="assets/bath.svg"
+              ></object>
+              <span class="rooms_item_title">Ванная</span>
+            </div>
+            <object type="image/svg+xml" data="assets/mini_arrow.svg"></object>
+          </div>
+        </div>
+        <div class="rooms_data flex-row">
+          <div class="rooms_data_items">
+            <h2>Гостинная</h2>
+            <div class="rooms_data_items_names flex-col-left">
+              <span class="rooms_data_items_title">Шезлонги</span>
+              <span class="rooms_data_items_title">Зонты</span>
+              <span class="rooms_data_items_title">Пластиковые столы</span>
+              <span class="rooms_data_items_title">Комплекты садовые</span>
+              <span class="rooms_data_items_title">Качели садовые</span>
+              <span class="rooms_data_items_title">Подвесные кресла</span>
+            </div>
+          </div>
+          <div class="rooms_data_items_info flex-col-left">
+            <span class="rooms_data_items_info_title"
+              >Исскуственный ротанг</span
+            >
+            <div class="flex-col-left gap-15">
+              <span class="rooms_data_info_title"
+                >Комплекты модульной мебели</span
+              >
+              <span class="rooms_data_info_title">Кресла, стулья</span>
+              <span class="rooms_data_info_title">Столы</span>
+              <span class="rooms_data_info_title">Скамьи и лавки</span>
+              <span class="rooms_data_info_title">Шезлонги</span>
+              <span class="rooms_data_info_title"
+                >Наборы мебели (стол +2 кресла)</span
+              >
+              <span class="rooms_data_info_title"
+                >Наборы мебели (стол +4 кресла)</span
+              >
+              <span class="rooms_data_info_title"
+                >Наборы мебели с диванами</span
+              >
+              <span class="rooms_data_info_title">Диваны</span>
+            </div>
+          </div>
+          <div class="advertising_section flex-col-left">
+            <div class="advertising">
+              <div class="advertising_slogan flex-col-left">
+                <object type="image/svg+xml" data="assets/slogan.svg"></object>
+                <span class="slogan_title">Качество, стиль и удобство.</span>
+                <span class="slogan_title_red"
+                  >Выбор, который вдохновляет!</span
+                >
+              </div>
+              <div class="advertising_img">
+                <img src="assets/advertising_img.png" alt="" />
+              </div>
+              <div class="triangle"></div>
+            </div>
+            <div class="fabric_advertising flex-row">
+              <object type="image/svg+xml" data="assets/pillowsvg.svg"></object>
+              <div class="fabric_advertising_titles flex-col-left">
+                <span class="text-700">Бесплатные образцы тканей</span>
+                <span class="text-400"
+                  >Выберите до 5 образцов из более чем 100 вариантов
+                  обивок</span
+                >
+              </div>
+            </div>
+            <div class="fabric_advertising flex-row">
+              <object type="image/svg+xml" data="assets/pillowsvg.svg"></object>
+              <div class="fabric_advertising_titles flex-col-left">
+                <span class="text-700">Бесплатные образцы тканей</span>
+                <span class="text-400"
+                  >Выберите до 5 образцов из более чем 100 вариантов
+                  обивок</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
     <section class="container_root">
@@ -259,6 +582,7 @@
 
       <section class="grid_photos">
         <div class="grid_item_1">
+          <div class="point point_1"></div>
           <img class="grid_item_1_img" src="assets/grid_item_1.jpg" alt="" />
         </div>
         <div class="grid_item_2">
