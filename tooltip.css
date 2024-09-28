@@ -1,0 +1,86 @@
+.tooltip {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  align-items: flex-end;
+
+  width: 430px;
+  height: 112px;
+
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip img {
+  border-radius: 10px;
+}
+
+.tooltip_img {
+  width: 140px;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.tooltip_price {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.tooltip_old_price {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24.52px;
+  text-align: right;
+  color: var(--text-light-brown);
+
+  position: relative;
+  left: 5px;
+  bottom: 2px;
+}
+
+.tooltip_old_price::after {
+  border-bottom: 1px solid black;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 14px;
+  background-color: var(--text-light-brown);
+}
+
+.tooltip_price_sale {
+  margin-left: 15px;
+  width: 46px;
+  height: 21px;
+
+  border-radius: 10px;
+  background: rgba(218, 9, 22, 1);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22.07px;
+  color: white;
+}
+
+.tooltip_in_stock {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.62px;
+  text-align: left;
+
+  color: var(--text-light-green);
+}
+
+.tooltip_more_href {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.62px;
+  text-align: left;
+  text-decoration: underline;
+  color: black;
+}

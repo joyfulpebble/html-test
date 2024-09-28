@@ -63,23 +63,75 @@
   border-radius: 50%;
   border: 3px solid white;
 
+  cursor: pointer;
   position: absolute;
   z-index: 2;
 }
 
-.point_1 {
+.point_1_1 {
   top: 161px;
   left: 200px;
 }
 
-.point_1 {
-  top: 161px;
-  left: 200px;
+.point_1_2 {
+  left: 170px;
+  bottom: 75px;
+}
+
+.point_2_1 {
+  top: 240px;
+  left: 140px;
+}
+
+.point_2_2 {
+  left: 420px;
+  bottom: 180px;
+}
+
+.point_4_1 {
+  top: 250px;
+  left: 140px;
+}
+
+.point_4_2 {
+  left: 270px;
+  bottom: 190px;
+}
+
+.point_4_3 {
+  left: 390px;
+  bottom: 180px;
+}
+
+.point_5_1 {
+  left: 140px;
+  bottom: 160px;
+}
+
+.point_5_2 {
+  left: 470px;
+  bottom: 120px;
+}
+
+.point_6_1 {
+  left: 110px;
+  bottom: 180px;
+}
+.point_6_2 {
+  left: 220px;
+  bottom: 130px;
+}
+.point_6_3 {
+  left: 165px;
+  bottom: 310px;
+}
+
+.grid_photos img {
+  border-radius: 50px;
 }
 
 .grid_item_1 {
   border-radius: 50px;
-  overflow: hidden;
   position: relative;
 
   grid-column: span 2 / span 2;
@@ -90,7 +142,7 @@
   grid-column-start: 3;
 
   border-radius: 50px;
-  overflow: hidden;
+  position: relative;
 }
 
 .grid_item_4 {
@@ -98,7 +150,7 @@
   grid-row-start: 2;
 
   border-radius: 50px;
-  overflow: hidden;
+  position: relative;
 }
 
 .grid_item_5 {
@@ -107,7 +159,7 @@
   grid-row-start: 2;
 
   border-radius: 50px;
-  overflow: hidden;
+  position: relative;
 }
 
 .grid_item_6 {
@@ -116,5 +168,5 @@
   grid-row-start: 2;
 
   border-radius: 50px;
-  overflow: hidden;
+  position: relative;
 }

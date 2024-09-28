@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="categories.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="rooms.css" />
+    <link rel="stylesheet" href="tooltip.css" />
 
     <script type="module" src="index.js"></script>
+    <script type="module" src="tooltip.js"></script>
   </head>
   <body>
     <section>
@@ -582,10 +584,30 @@
 
       <section class="grid_photos">
         <div class="grid_item_1">
-          <div class="point point_1"></div>
+          <div class="tooltip" id="tooltip">
+            <img class="tooltip_img" src="assets/tooltip_img.jpg" alt="" />
+            <div class="flex-col-left">
+              <span class="text-700"
+                >Кабинет City или более длинное название позиции</span
+              >
+              <div class="flex-row margin-t-10">
+                <span class="tooltip_price">178 855 ₽</span>
+                <span class="tooltip_old_price">357 710 ₽</span>
+                <div class="tooltip_price_sale flex-cen">-50%</div>
+              </div>
+              <div class="flex-row flex-between">
+                <div class="tooltip_in_stock">&bull; В наличии</div>
+                <a class="tooltip_more_href" href="">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div id="p_1_1" class="point point_1_1"></div>
+          <div id="p_1_2" class="point point_1_2"></div>
           <img class="grid_item_1_img" src="assets/grid_item_1.jpg" alt="" />
         </div>
         <div class="grid_item_2">
+          <div class="point point_2_1"></div>
+          <div class="point point_2_2"></div>
           <img class="grid_item_2_img" src="assets/grid_item_2.jpg" alt="" />
         </div>
         <div class="grid_item_3">
@@ -600,12 +622,20 @@
           <img class="grid_item_3_img" src="assets/grid_item_3.png" alt="" />
         </div>
         <div class="grid_item_4">
+          <div class="point point_4_1"></div>
+          <div class="point point_4_2"></div>
+          <div class="point point_4_3"></div>
           <img class="grid_item_4_img" src="assets/grid_item_4.png" alt="" />
         </div>
         <div class="grid_item_5">
+          <div class="point point_5_1"></div>
+          <div class="point point_5_2"></div>
           <img class="grid_item_5_img" src="assets/grid_item_5.jpg" alt="" />
         </div>
         <div class="grid_item_6">
+          <div class="point point_6_1"></div>
+          <div class="point point_6_2"></div>
+          <div class="point point_6_3"></div>
           <img class="grid_item_6_img" src="assets/grid_item_6.png" alt="" />
         </div>
       </section>
