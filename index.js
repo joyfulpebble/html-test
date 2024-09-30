@@ -17,14 +17,14 @@ $catalogbtn.addEventListener("click", () => {
     $catalog.classList.add("flex-row");
 
     $catalog.classList.add("fixed");
-    $header.classList.add("fixed");
+    $header.classList.add("fixed_header");
     $categories.classList.add("fixed");
   } else {
     $catalog.classList.add("hide", "fixed");
     $catalog.classList.remove("flex-row");
 
     $catalog.classList.remove("fixed");
-    $header.classList.remove("fixed");
+    $header.classList.remove("fixed_header");
     $categories.classList.remove("fixed");
   }
 });
@@ -37,14 +37,14 @@ $roomsbtn.addEventListener("click", () => {
     $rooms.classList.add("flex-row");
 
     $rooms.classList.add("fixed");
-    $header.classList.add("fixed");
+    $header.classList.add("fixed_header");
     $categories.classList.add("fixed");
   } else {
     $rooms.classList.add("hide", "fixed");
     $rooms.classList.remove("flex-row");
 
     $rooms.classList.remove("fixed");
-    $header.classList.remove("fixed");
+    $header.classList.remove("fixed_header");
     $categories.classList.remove("fixed");
   }
 });

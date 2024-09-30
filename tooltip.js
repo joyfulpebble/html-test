@@ -12,6 +12,8 @@ targetElement.addEventListener("mouseenter", function () {
   tooltip.style.top = `${+top - 140}px`;
   tooltip.style.left = `${+left - 220}px`;
   tooltip.style.display = "flex";
+
+  targetElement.classList.add("point_active");
 });
 
 tooltip.addEventListener("mouseenter", function () {
@@ -22,12 +24,14 @@ tooltip.addEventListener("mouseenter", function () {
 tooltip.addEventListener("mouseleave", function () {
   stable = false;
   tooltip.style.display = "none";
+  targetElement.classList.remove("point_active");
 });
 
 targetElement.addEventListener("mouseleave", function () {
   setTimeout(() => {
     if (!stable) {
       tooltip.style.display = "none";
+      targetElement.classList.remove("point_active");
     }
   }, 200);
 });

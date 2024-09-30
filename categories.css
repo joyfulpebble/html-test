@@ -1,22 +1,21 @@
 .categories {
-  width: 1560px;
   height: 58px;
 
   background-color: rgba(232, 232, 232, 1);
   padding: 0 180px;
 
   top: 120px;
-
+  display: flex;
   justify-content: start;
 }
 
 .promo {
-  width: 130px;
-  height: 36px;
+  padding: 6px 25px;
+  gap: 5px;
 
   border: 1px solid rgba(218, 9, 22, 1);
   border-radius: 20px;
-  margin-right: 40px;
+  margin-right: 61px;
   cursor: pointer;
 }
 
@@ -30,12 +29,18 @@
 }
 
 .category {
+  height: 58px;
+
   cursor: pointer;
-  padding: 16px;
+  padding: 0 18px;
+
   font-size: 15px;
   font-weight: 700;
   line-height: 18.39px;
   text-align: left;
+
+  display: flex;
+  align-items: center;
 }
 
 /* --------------------------------------------------- */
